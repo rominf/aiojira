@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "jira-async"
+version = "0.1.0"
+description = "Asynchronous Jira library"
+authors = ["Roman Inflianskas <r.inflyanskas@zmeke.com>"]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+jira = "^2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
