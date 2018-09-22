@@ -1,4 +1,4 @@
-from jira_async import __version__
+from aiojira import __version__
 
 
 def test_version():
