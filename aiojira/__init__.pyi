@@ -1,7 +1,19 @@
 from typing import Dict, Tuple, Any, List
 
 
-class Resource(object): ...
+class Resource(object):
+    displayName: Any
+    key: Any
+    name: Any
+    filename: Any
+    value: Any
+    scope: Any
+    votes: Any
+    id: Any
+    mimeType: Any
+    closed: Any
+
+    ...
 
 class Project(Resource): ...
 
