@@ -13,9 +13,24 @@ class Resource(object):
     mimeType: Any
     closed: Any
 
+    JIRA_BASE_URL: str
+
+    def __init__(self, resource: str, options: Dict[str, str], session: ResilientSession,
+                 base_url: Optional[str] = JIRA_BASE_URL):
+        self._resource = resource
+        self._options = options
+        self._session = session
+        self._base_url = base_url
+        self.raw = None
+
     ...
 
-class Project(Resource): ...
+class Project(Resource):
+    def __init__(self, options: Dict[str, str], session: ResilientSession, raw: Dict = None):
+        super().__init__('', options, session)
+
+    ...
+
 
 class JIRA(object):
     @staticmethod
