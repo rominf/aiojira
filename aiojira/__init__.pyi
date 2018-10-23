@@ -25,11 +25,15 @@ class Resource(object):
 
     ...
 
+
 class Project(Resource):
     def __init__(self, options: Dict[str, str], session: ResilientSession, raw: Dict = None):
         super().__init__('', options, session)
 
     ...
+
+
+class Issue(Resource): ...
 
 
 class JIRA(object):
