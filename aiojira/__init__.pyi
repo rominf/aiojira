@@ -1,7 +1,6 @@
 from typing import Dict, Tuple, Any, List, Optional
 
-
-class ResilientSession: ...
+from resilientsession import ResilientSession
 
 
 class Resource(object):

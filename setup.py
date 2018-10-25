@@ -12,7 +12,7 @@ install_requires = \
 
 setup_kwargs = {
     'name': 'aiojira',
-    'version': '0.1.7',
+    'version': '0.1.8',
     'description': 'Asynchronous Jira library',
     'long_description': "# aiojira - asynchronous Jira Python library\nAsynchronous Jira Python library - asynchronous wrapper for https://github.com/pycontribs/jira\n\n## Installation\nTo install from PyPI: https://pypi.org/project/aiojira/ run:\n```shell\n$ pip install aiojira\n```\n\n## Usage\nFor documentation refer to https://jira.readthedocs.io, because `aiojira` uses the same API as `jira` with 2 exceptions:\n1. All functions are converted to coroutines, that means you have to add `await` keyword before all function calls.\n2. To asynchronously create classes from `aiojira` use static method `create`.\n\nExample:\n```python\nimport asyncio\nimport aiojira\n\n\nserver = 'https://jira.example.com/'\nauth = ('user', 'password')\n\nJIRA = asyncio.run(aiojira.JIRA.create(server=server, basic_auth=auth))\nprojects = asyncio.run(JIRA.projects())\nprint(projects)\n```\n",
     'author': 'Roman Inflianskas',
