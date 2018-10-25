@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiojira"
-version = "0.1.5"
+version = "0.1.7"
 description = "Asynchronous Jira library"
 authors = ["Roman Inflianskas <r.inflyanskas@zmeke.com>"]
 license = "Apache-2.0"

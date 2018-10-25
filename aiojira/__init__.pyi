@@ -1,4 +1,7 @@
-from typing import Dict, Tuple, Any, List
+from typing import Dict, Tuple, Any, List, Optional
+
+
+class ResilientSession: ...
 
 
 class Resource(object):
@@ -33,7 +36,11 @@ class Project(Resource):
     ...
 
 
-class Issue(Resource): ...
+class Issue(Resource):
+    def __init__(self, options: Dict[str, str], session: ResilientSession, raw: Dict = None):
+        super().__init__('', options, session)
+
+    ...
 
 
 class JIRA(object):
