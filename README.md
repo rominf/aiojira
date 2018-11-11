@@ -1,8 +1,12 @@
 # aiojira - asynchronous Jira Python library
+[![License](https://img.shields.io/pypi/l/aiojira.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aiojira.svg)
+[![PyPI](https://img.shields.io/pypi/v/aiojira.svg)](https://pypi.org/project/aiojira/)
+
 Asynchronous Jira Python library - asynchronous wrapper for https://github.com/pycontribs/jira
 
 ## Installation
-To install from PyPI: https://pypi.org/project/aiojira/ run:
+To install from [PyPI](https://pypi.org/project/aiojira/) run:
 ```shell
 $ pip install aiojira
 ```
