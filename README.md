@@ -8,6 +8,7 @@ Asynchronous Jira Python library - asynchronous wrapper for https://github.com/p
 ## Installation
 To install from [PyPI](https://pypi.org/project/aiojira/) run:
 ```shell
+$ pip install https://github.com/yifeikong/aioify/archive/master.zip
 $ pip install aiojira
 ```
 
