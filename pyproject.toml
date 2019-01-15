@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aiojira"
-version = "0.1.13"
+version = "0.1.14"
 description = "Asynchronous Jira library"
 authors = ["Roman Inflianskas <r.inflyanskas@zmeke.com>"]
 license = "Apache-2.0"
@@ -14,8 +14,8 @@ repository = "https://github.com/rominf/aiojira"
 [tool.poetry.dependencies]
 python = "^3.6"
 jira = "^2.0"
-aioify = {git = "https://github.com/yifeikong/aioify.git"}
 poetry-version = "^0.1.2"
+aioify = "^0.3.1"
 
 [tool.poetry.dev-dependencies]
 
